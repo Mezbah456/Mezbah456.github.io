@@ -5,54 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Icon Buttons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezbah Ahmed Tusar's Home Page</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+
+  <!-- css for mobile -->
+  <link rel="stylesheet" href="style.css">
 
 
-    <style>
-        .social-media{
-            background-color: gray;
-           padding: 10px 10px;
-           position:absolute;
-           right:100px;
-           left :100px;
-           display:flex;
-           flex-flow:wrap column;
-        }
-
-        .btn{
-            border:none;
-          
-    
-            border-radius: 200px;
-            font-size: 5rem;
-           
-           
-        }
+  <!-- css for desktop -->
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+<style>
+    .social-media{
+        background-color: #39a4ac;
+    padding: 1% 30%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+      
+      
+       display:flex;
+       flex-flow:wrap column;
        
-        .social-media button:hover{
+    }
 
-         background-color:aqua;
-        
+    .btn{
+        border:none;
+      
 
-        }
+        border-radius: 200px;
+        font-size: 7rem;
+       
+       
+    }
+   
+    .social-media button:hover{
+
+     background-color:aqua;
+    
+
+    }
+
+    .mail{
+        background-color: #39a4ac;
+    padding: 1% 30%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+   
+      
+       display:flex;
+       flex-flow:wrap column;
+       text-align: center;
+    }
+  
+     button{
+
+        padding: 12px 20px;
+    margin: 30px 0;
+    background-color:skyblue;
+    border-radius: 100px;
+    text-shadow: tomato;
+    height: 150%;
+    color:black bold;
+    }
+    button:hover{
+
+background-color:aqua;
 
 
-    </style>
+}
+p{
+    font-size: 10px;
+    text-shadow: 4px 4px 4px green;
+border-radius: 50%;
+}
+
+h1{
+text-shadow: 2px 2px 2px green;
+font-family: 'Montserrat', sans-serif;
+border :60px 60px 40px;
+padding: 30px 30px 30px;
+transition: background-color 2s;
+font-weight: bolder;
+text-align: center;
+
+
+}
+h1:hover{
+    background-color: azure;
+}
+
+.footer {
+
+background-color: black;
+width :100%;
+text-align: center;
+padding : 10px;
+color :blanchedalmond;}
+
+</style>
+
 </head>
-<body>
-    <div class="social-media">       
-        <button class="btn" onclick="window.open('http://www.youtube.com/c/anisulislamrubel')" class="btn request-callback"><i class="media-icon fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('https://www.facebook.com/studywithanis')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('http://www.studywithanis.com/')" class="btn request-callback"><i class="fa fa-google" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('http://www.youtube.com/c/anisulislamrubel')" class="btn request-callback"><i class="fa fa-skype" style="color:  #3b5998;" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('http://www.youtube.com/c/anisulislamrubel')" class="btn request-callback"><i class="fa fa-envelope-o" style="color:  #000000;" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('https://www.linkedin.com/in/anisul-islam-515a7714a/')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
-        <br>
-        <button class="btn" onclick="window.open('https://github.com/anisul-Islam')" class="btn request-callback"><i class="fa fa-github" aria-hidden="true" style="color: #000000;"></i></button>
+<body >
+    <div class="about-me">
+
+    <div class="mail">
+        <h1>CONTACT ME</h1>
+        <hr class="dotted-hr">
+
+        <form action="mailto:mezbah456@gmail.com" method="post" enctype="text/plain">
+            <p><input type="text" placeholder="Your Name" name="name"></p>
+            <p><input type="email" placeholder="Your Email" name="email"></p>
+            <textarea name="message" id="" cols="50" rows="20" placeholder="Your Message Here"></textarea>
+            <button type="submit">SEND</button>
+            <button type="reset">RESET</button>
+        </form>
     </div>
+
+
+
+    <div class="social-media">       
+        <h1>More ways to contact</h1>
+        
+        <button class="btn" onclick="window.open('https://www.youtube.com/channel/UCx-r8iSJ2A-uP1zxjQsi1nw')" class="btn request-callback"><i class="media-icon fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('https://www.facebook.com/mezbah.ahmed.925/')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        
+        <button class="btn" onclick="window.open('https://www.linkedin.com/in/mezbah-ahmed-b111a01b7/')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        
+        
+    </div>
+</div>
+    <footer class="footer">
+          
+
+        <h5 >copy right @ Mezbah Ahmed 2021</h5>
+       </footer>
 </body>
 </html>
